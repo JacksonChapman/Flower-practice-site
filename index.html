@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flowers by Me — Florist in Casper, Wyoming</title>
+  <meta name="description" content="Flowers by Me is a small florist studio in Casper, Wyoming. Wildflower bouquets, wedding and event florals, sympathy arrangements, subscriptions and seasonal workshops. Same-day Casper delivery.">
+  <meta name="theme-color" content="#FBF7F1">
+
+  <!-- Social preview (swap the image URL for a real photo before launch) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Flowers by Me — Florist in Casper, Wyoming">
+  <meta property="og:description" content="Wyoming blooms, delivered with heart. Hand-tied wildflower bouquets, wedding florals and workshops in Casper, WY.">
+  <meta property="og:image" content="https://picsum.photos/seed/fbm-hero/1200/630">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+
+  <!-- Flags JS as available so scroll-reveal starts hidden. Without JS, content is
+       visible from the first paint instead of being stuck at opacity 0. -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Local business structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Florist",
+    "name": "Flowers by Me",
+    "description": "Rustic-romantic floral studio in Casper, Wyoming.",
+    "telephone": "+1-307-555-0148",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "214 S. Wolcott St",
+      "addressLocality": "Casper",
+      "addressRegion": "WY",
+      "postalCode": "82601",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }],
+    "sameAs": ["https://instagram.com/flowersbyme.casper"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============================= HEADER ============================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="wrap header__inner">
+      <a class="brand" href="#top">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+            <path d="M16 29V13"/>
+            <path d="M16 13c0-4 3-7 7-7 0 4-3 7-7 7z" fill="currentColor" fill-opacity=".15"/>
+            <path d="M16 17c0-4-3-7-7-7 0 4 3 7 7 7z" fill="currentColor" fill-opacity=".15"/>
+            <path d="M16 23c0-3.5 2.5-6 6-6 0 3.5-2.5 6-6 6z" fill="currentColor" fill-opacity=".15"/>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__name">Flowers by Me</span>
+          <span class="brand__place">Casper, Wyoming</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="nav-toggle__label">Menu</span>
+      </button>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="#services">Shop</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="nav__cta"><a class="btn btn--sm btn--solid" href="#contact">Order flowers</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" id="top">
+      <div class="hero__media">
+        <img
+          src="https://picsum.photos/seed/fbm-hero/1800/1200"
+          alt="Close-up of a loosely gathered wildflower bouquet — cream ranunculus, dried grasses and eucalyptus — held in warm afternoon light"
+          width="1800" height="1200" fetchpriority="high" decoding="async">
+      </div>
+
+      <div class="wrap hero__inner">
+        <p class="eyebrow eyebrow--light">Est. 2016 · Storefront since 2019</p>
+        <h1 class="hero__title">Flowers <em>by</em> Me</h1>
+        <p class="hero__tagline">Wyoming blooms, delivered with heart.</p>
+        <p class="hero__note">
+          Hand-tied, gently wild arrangements — sourced from Wyoming growers when in season,
+          and always built one stem at a time.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#contact">Order flowers</a>
+          <a class="btn btn--ghost" href="#weddings">Book a wedding</a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#services">
+        <span>Have a look</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M12 5v14M6 13l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ============================ MARQUEE ============================ -->
+    <div class="ticker">
+      <div class="wrap ticker__inner">
+        <span>Same-day delivery in Casper</span>
+        <span aria-hidden="true">·</span>
+        <span>Tue–Sat, 9am–5pm</span>
+        <span aria-hidden="true">·</span>
+        <span><a href="tel:+13075550148">(307) 555-0148</a></span>
+        <span aria-hidden="true">·</span>
+        <span>214 S. Wolcott St</span>
+      </div>
+    </div>
+
+    <!-- ============================ SERVICES =========================== -->
+    <section class="section services" id="services">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow">What we make</p>
+          <h2 class="section__title">Flowers for the <em>everyday</em> and the once-in-a-lifetime</h2>
+          <p class="section__lede">
+            Everything is arranged in the shop on Wolcott Street — no wire service, no cookie-cutter
+            catalog. Tell us the person and the occasion, and we'll build to it.
+          </p>
+        </header>
+
+        <!-- Two feature cards -->
+        <div class="feature-grid">
+          <article class="feature reveal">
+            <div class="feature__media">
+              <img src="https://picsum.photos/seed/fbm-everyday/900/700" loading="lazy" decoding="async"
+                   width="900" height="700"
+                   alt="Hands trimming stems over a wooden bench scattered with cosmos, sage and dried wheat">
+            </div>
+            <div class="feature__body">
+              <p class="eyebrow">01 — Everyday</p>
+              <h3>Everyday arrangements &amp; same-day Casper delivery</h3>
+              <p>
+                Market bunches, birthday bouquets, "I'm sorry I missed dinner" flowers. Order by
+                <strong>1pm Tuesday through Saturday</strong> and we'll have it on a doorstep in
+                Casper, Mills or Evansville that afternoon.
+              </p>
+              <ul class="tick-list">
+                <li>Designer's-choice from $45</li>
+                <li>Vase or wrapped in kraft &amp; twine</li>
+                <li>Handwritten card, always</li>
+              </ul>
+              <a class="link-arrow" href="#contact">Start an order <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="feature feature--flip reveal" id="weddings">
+            <div class="feature__media">
+              <img src="https://picsum.photos/seed/fbm-wedding-feature/900/700" loading="lazy" decoding="async"
+                   width="900" height="700"
+                   alt="Bride's loose garden-style bouquet of roses, peonies and trailing greenery resting on a weathered barn door">
+            </div>
+            <div class="feature__body">
+              <p class="eyebrow">02 — Weddings &amp; events</p>
+              <h3>Wedding &amp; event florals</h3>
+              <p>
+                Full-service design for twenty guests or two hundred. We've worked the barn venues out
+                past Bar Nunn, ranch weddings up the Platte, and receptions a block from the
+                <strong>Nicolaysen Art Museum</strong> — so we know the load-in doors, the light, and
+                what wilts in a Wyoming wind.
+              </p>
+              <ul class="tick-list">
+                <li>Consultation, mood board &amp; sample piece</li>
+                <li>Ceremony installs, arbors &amp; aisle work</li>
+                <li>Delivery, setup and end-of-night strike</li>
+              </ul>
+              <a class="link-arrow" href="#contact">Check your date <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Three compact cards -->
+        <div class="card-grid">
+          <article class="card reveal">
+            <span class="card__num" aria-hidden="true">03</span>
+            <h3>Bloom Club</h3>
+            <p>
+              A standing bouquet, weekly or every other week, built from whatever is best that morning.
+              Pick up at the shop or have it delivered.
+            </p>
+            <p class="card__meta">From $38 / delivery · pause anytime</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__num" aria-hidden="true">04</span>
+            <h3>Sympathy &amp; funeral</h3>
+            <p>
+              Quiet, dignified work — standing sprays, casket pieces and small arrangements that travel
+              home afterward. We coordinate directly with Casper funeral homes so you don't have to.
+            </p>
+            <p class="card__meta">Same-day when we can · call us and we'll make it work</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__num" aria-hidden="true">05</span>
+            <h3>Seasonal workshops</h3>
+            <p>
+              One evening a month in the back of the shop: wreath-making in the fall, bouquet classes in
+              summer, dried-stem arrangements when the ground is frozen. Wine, ten seats, all materials.
+            </p>
+            <p class="card__meta">$65 per seat · dates posted on Instagram</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= GALLERY =========================== -->
+    <section class="section section--sand gallery" id="gallery">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow">Recent work</p>
+          <h2 class="section__title">A year of <em>stems</em></h2>
+          <p class="section__lede">
+            Pieces from the last few seasons. Tap any photo to see it larger — use the arrow keys or
+            swipe to move through, Esc to close.
+          </p>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filter gallery by category">
+          <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="chip" data-filter="weddings" aria-pressed="false">Weddings</button>
+          <button type="button" class="chip" data-filter="everyday" aria-pressed="false">Everyday</button>
+          <button type="button" class="chip" data-filter="seasonal" aria-pressed="false">Seasonal</button>
+        </div>
+
+        <div class="masonry" id="galleryGrid">
+          <figure class="tile" data-category="weddings">
+            <button type="button" class="tile__btn" data-index="0">
+              <img src="https://picsum.photos/seed/fbm-g1/700/900" loading="lazy" decoding="async" width="700" height="900"
+                   alt="Bridal bouquet of blush garden roses and trailing eucalyptus held against an ivory dress">
+              <span class="tile__caption"><span class="tile__cat">Weddings</span>Garden-rose bridal bouquet</span>
+            </button>
+          </figure>
+          <figure class="tile" data-category="everyday">
+            <button type="button" class="tile__btn" data-index="1">
+              <img src="https://picsum.photos/seed/fbm-g2/700/560" loading="lazy" decoding="async" width="700" height="560"
+                   alt="Small jar of cosmos and bachelor buttons on a sunlit kitchen windowsill">
+              <span class="tile__caption"><span class="tile__cat">Everyday</span>Tuesday market jar</span>
+            </button>
+          </figure>
+          <figure class="tile" data-category="seasonal">
+            <button type="button" class="tile__btn" data-index="2">
+              <img src="https://picsum.photos/seed/fbm-g3/700/860" loading="lazy" decoding="async" width="700" height="860"
+                   alt="Dried wheat, yarrow and bleached grasses gathered into a wall wreath on weathered barn wood">
+              <span class="tile__caption"><span class="tile__cat">Seasonal</span>Dried prairie wreath</span>
+            </button>
+          </figure>
+          <figure class="tile" data-category="weddings">
+            <button type="button" class="tile__btn" data-index="3">
+              <img src="https://picsum.photos/seed/fbm-g4/700/540" loading="lazy" decoding="async" width="700" height="540"
+                   alt="Ceremony arbor draped with greenery and cream roses set against an open Wyoming field">
+              <span class="tile__caption"><span class="tile__cat">Weddings</span>Arbor install, ranch ceremony</span>
+            </button>
+          </figure>
+          <figure class="tile" data-category="everyday">
+            <button type="button" class="tile__btn" data-index="4">
+              <img src="https://picsum.photos/seed/fbm-g5/700/900" loading="lazy" decoding="async" width="700" height="900"
+                   alt="Close-up of terracotta-toned ranunculus petals with water beading on the edges">
+              <span class="tile__caption"><span class="tile__cat">Everyday</span>Ranunculus, up close</span>
+            </button>
+          </figure>
+          <figure class="tile" data-category="seasonal">
+            <button type="button" class="tile__btn" data-index="5">
+              <img src="https://picsum.photos/seed/fbm-g6/700/620" loading="lazy" decoding="async" width="700" height="620"
+                   alt="Hands wiring an autumn wreath of seed pods and dried hydrangea at a workshop table">
+              <span class="tile__caption"><span class="tile__cat">Seasonal</span>Fall wreath workshop</span>
+            </button>
+          </figure>
+          <figure class="tile" data-category="weddings">
+            <button type="button" class="tile__btn" data-index="6">
+              <img src="https://picsum.photos/seed/fbm-g7/700/880" loading="lazy" decoding="async" width="700" height="880"
+                   alt="Long reception table lined with low arrangements of peonies, sage and taper candles inside a barn">
+              <span class="tile__caption"><span class="tile__cat">Weddings</span>Barn reception tables</span>
+            </button>
+          </figure>
+          <figure class="tile" data-category="everyday">
+            <button type="button" class="tile__btn" data-index="7">
+              <img src="https://picsum.photos/seed/fbm-g8/700/580" loading="lazy" decoding="async" width="700" height="580"
+                   alt="Kraft-wrapped bouquet tied with jute twine sitting on a shop counter beside clippers">
+              <span class="tile__caption"><span class="tile__cat">Everyday</span>Wrapped for delivery</span>
+            </button>
+          </figure>
+          <figure class="tile" data-category="seasonal">
+            <button type="button" class="tile__btn" data-index="8">
+              <img src="https://picsum.photos/seed/fbm-g9/700/900" loading="lazy" decoding="async" width="700" height="900"
+                   alt="Buckets of freshly cut summer stems lined up in the cooler doorway, backlit by morning sun">
+              <span class="tile__caption"><span class="tile__cat">Seasonal</span>Wednesday delivery, mid-July</span>
+            </button>
+          </figure>
+          <figure class="tile" data-category="weddings">
+            <button type="button" class="tile__btn" data-index="9">
+              <img src="https://picsum.photos/seed/fbm-g10/700/560" loading="lazy" decoding="async" width="700" height="560"
+                   alt="Boutonniere of a single spray rose, olive leaf and dried grass pinned to a wool lapel">
+              <span class="tile__caption"><span class="tile__cat">Weddings</span>Wool-lapel boutonniere</span>
+            </button>
+          </figure>
+          <figure class="tile" data-category="everyday">
+            <button type="button" class="tile__btn" data-index="10">
+              <img src="https://picsum.photos/seed/fbm-g11/700/840" loading="lazy" decoding="async" width="700" height="840"
+                   alt="Sympathy arrangement of white stock, sage and soft greenery in a low ceramic bowl">
+              <span class="tile__caption"><span class="tile__cat">Everyday</span>Sympathy bowl</span>
+            </button>
+          </figure>
+          <figure class="tile" data-category="seasonal">
+            <button type="button" class="tile__btn" data-index="11">
+              <img src="https://picsum.photos/seed/fbm-g12/700/640" loading="lazy" decoding="async" width="700" height="640"
+                   alt="Winter arrangement of evergreen tips, rose hips and dried eucalyptus on a frosted porch step">
+              <span class="tile__caption"><span class="tile__cat">Seasonal</span>December porch pot</span>
+            </button>
+          </figure>
+        </div>
+
+        <p class="gallery__empty" id="galleryEmpty" hidden>No photos in that category yet — check back soon.</p>
+      </div>
+    </section>
+
+    <!-- ============================== ABOUT ============================ -->
+    <section class="section about" id="about">
+      <div class="wrap about__grid">
+        <figure class="about__media reveal">
+          <div class="about__frame">
+            <img src="https://picsum.photos/seed/fbm-mari/800/1000" loading="lazy" decoding="async" width="800" height="1000"
+                 alt="Mari Kowalski in an apron at her workbench, sorting stems in the natural light of the shop's front window">
+          </div>
+          <figcaption class="about__cap">Mari, closing up on a Saturday.</figcaption>
+        </figure>
+
+        <div class="about__body reveal">
+          <p class="eyebrow">The short version</p>
+          <h2 class="section__title">Started in a <em>garage</em>, three blocks from here</h2>
+          <p>
+            Mari Kowalski taught herself to arrange out of a two-stall garage on the west side —
+            buckets in the cold, a folding table, and a lot of stems that didn't work out. For three
+            years it was word of mouth only: a friend's wedding, then her cousin's, then someone who
+            saw the photos and called out of the blue.
+          </p>
+          <p>
+            In 2019 she signed the lease on 214 S. Wolcott, a few blocks off downtown near the Old
+            Yellowstone District. Same table. Better cooler.
+          </p>
+          <p>
+            When the season allows, stems come from growers within a few hours of Casper — sweet peas
+            and cosmos in July, dahlias into September, dried grasses and seed pods cut here on the
+            prairie to carry us through winter. What we can't grow locally we source carefully, and
+            we'll always tell you which is which.
+          </p>
+
+          <blockquote class="pull-quote">
+            <p>"A florist who'd rather hand you something a little wild than something perfectly round."</p>
+            <cite>Casper Star-Tribune, <span>Local Business Spotlight</span> — 2023</cite>
+          </blockquote>
+
+          <dl class="stats">
+            <div><dt>Weddings since 2016</dt><dd>200+</dd></div>
+            <div><dt>Wyoming growers</dt><dd>6</dd></div>
+            <div><dt>Storefront on Wolcott</dt><dd>2019</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== TESTIMONIALS ======================== -->
+    <section class="section section--sand testimonials" id="testimonials">
+      <div class="wrap">
+        <header class="section__head section__head--center reveal">
+          <p class="eyebrow">Kind words</p>
+          <h2 class="section__title">What folks <em>say</em></h2>
+        </header>
+
+        <div class="quote-grid">
+          <figure class="quote reveal">
+            <div class="quote__stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              <p>
+                Booked her for my daughter's wedding at a ranch outside town. Mari drove out twice
+                beforehand just to see the light in the barn. The bouquets looked like someone had
+                walked the fence line that morning and gathered them up.
+              </p>
+            </blockquote>
+            <figcaption>Jenna T. <span>Casper, WY</span></figcaption>
+          </figure>
+
+          <figure class="quote reveal">
+            <div class="quote__stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              <p>
+                I've had the Bloom Club going for two years. Every other Thursday something completely
+                different shows up and it's the best forty dollars on my card. My neighbor signed up
+                after the third one.
+              </p>
+            </blockquote>
+            <figcaption>Dev R. <span>Old Yellowstone District</span></figcaption>
+          </figure>
+
+          <figure class="quote reveal">
+            <div class="quote__stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              <p>
+                We called about my father's service on a Tuesday morning and she had everything at the
+                funeral home by two. She asked what he liked to grow, and put it in. I won't forget that.
+              </p>
+            </blockquote>
+            <figcaption>Marcy L. <span>Mills, WY</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= CONTACT =========================== -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact__grid">
+        <div class="contact__form-col">
+          <header class="section__head reveal">
+            <p class="eyebrow">Order or inquire</p>
+            <h2 class="section__title">Tell us what you <em>need</em></h2>
+            <p class="section__lede">
+              Fill this out and we'll get back to you within one business day. In a hurry, or need
+              same-day? Call the shop — that's always fastest.
+            </p>
+          </header>
+
+          <form class="form reveal" id="orderForm" novalidate>
+            <div class="field">
+              <label for="name">Your name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" autocomplete="name" required
+                     aria-describedby="name-error">
+              <p class="error" id="name-error" role="alert"></p>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required
+                       aria-describedby="email-error" placeholder="you@example.com">
+                <p class="error" id="email-error" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone <span class="opt">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel"
+                       aria-describedby="phone-error" placeholder="(307) 555-0123">
+                <p class="error" id="phone-error" role="alert"></p>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="date">Date needed <span class="req" aria-hidden="true">*</span></label>
+                <input type="date" id="date" name="date" required aria-describedby="date-error">
+                <p class="error" id="date-error" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label for="occasion">Occasion</label>
+                <select id="occasion" name="occasion">
+                  <option value="Everyday arrangement">Everyday arrangement</option>
+                  <option value="Wedding or event">Wedding or event</option>
+                  <option value="Bloom Club subscription">Bloom Club subscription</option>
+                  <option value="Sympathy or funeral">Sympathy or funeral</option>
+                  <option value="Workshop">Workshop</option>
+                  <option value="Something else">Something else</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">What are you thinking? <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="5" required aria-describedby="message-error"
+                        placeholder="Colors you love, colors you don't, budget range, delivery address — anything helps."></textarea>
+              <p class="error" id="message-error" role="alert"></p>
+            </div>
+
+            <div class="form__actions">
+              <button type="submit" class="btn btn--solid">Send inquiry</button>
+              <p class="form__hint">We'll never share your details. No spam, ever.</p>
+            </div>
+
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="contact__info reveal" aria-label="Shop details">
+          <div class="info-card">
+            <h3>Visit the shop</h3>
+            <address>
+              <a href="https://www.google.com/maps/search/?api=1&query=214+S+Wolcott+St+Casper+WY+82601"
+                 target="_blank" rel="noopener noreferrer">
+                214 S. Wolcott St<br>Casper, WY 82601
+              </a>
+            </address>
+            <p class="info-card__note">A few blocks off downtown, near the Old Yellowstone District. Street parking out front.</p>
+
+            <h3>Hours</h3>
+            <table class="hours">
+              <tbody>
+                <tr><th scope="row">Tue – Sat</th><td>9am – 5pm</td></tr>
+                <tr class="is-closed"><th scope="row">Sun – Mon</th><td>Closed</td></tr>
+              </tbody>
+            </table>
+
+            <h3>Get in touch</h3>
+            <ul class="info-list">
+              <li>
+                <span class="info-list__label">Phone</span>
+                <a href="tel:+13075550148">(307) 555-0148</a>
+              </li>
+              <li>
+                <span class="info-list__label">Instagram</span>
+                <a href="https://instagram.com/flowersbyme.casper" target="_blank" rel="noopener noreferrer">@flowersbyme.casper</a>
+              </li>
+            </ul>
+
+            <p class="info-card__cutoff">
+              <strong>Same-day cutoff:</strong> order by 1pm for afternoon delivery in Casper, Mills and Evansville.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER =========================== -->
+  <footer class="site-footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <p class="footer__name">Flowers by Me</p>
+        <p class="footer__tag">Prairie-grown, hand-tied. Casper, Wyoming.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer">
+        <ul>
+          <li><a href="#services">Shop</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__contact">
+        <a href="tel:+13075550148">(307) 555-0148</a>
+        <a href="https://instagram.com/flowersbyme.casper" target="_blank" rel="noopener noreferrer">@flowersbyme.casper</a>
+        <span>214 S. Wolcott St, Casper, WY 82601</span>
+      </div>
+    </div>
+    <div class="wrap footer__legal">
+      <p>&copy; <span id="year">2026</span> Flowers by Me. All rights reserved.</p>
+      <p>Photos are placeholders from picsum.photos.</p>
+    </div>
+  </footer>
+
+  <!-- ============================= LIGHTBOX ========================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Gallery image viewer" hidden>
+    <div class="lightbox__backdrop" data-close></div>
+
+    <button type="button" class="lightbox__btn lightbox__close" id="lbClose" aria-label="Close viewer">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <button type="button" class="lightbox__btn lightbox__prev" id="lbPrev" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <path d="M15 5l-7 7 7 7" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <figure class="lightbox__figure">
+      <!-- src/alt are filled in by js/main.js when the viewer opens -->
+      <img id="lbImage" alt="">
+      <figcaption class="lightbox__caption">
+        <span id="lbCaption"></span>
+        <span class="lightbox__count" id="lbCount"></span>
+      </figcaption>
+    </figure>
+
+    <button type="button" class="lightbox__btn lightbox__next" id="lbNext" aria-label="Next image">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
